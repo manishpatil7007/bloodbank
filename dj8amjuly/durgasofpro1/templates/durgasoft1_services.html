@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+
+{#    <h1 style="text-align: center;color: darkgreen"></h1>#}
+    <style>
+    th,td{
+        padding: 10px 20px;
+        text-align: center;
+    }
+    </style>
+    {% if servises %}
+    <center>
+    <table border="2px">
+        <thead>
+        <tr>
+            <th>CourseID</th>
+            <th>Course Name</th>
+            <th>Course Duration</th>
+            <th>Course StartDate</th>
+            <th>Course StartTime</th>
+            <th>Course Trainer Name</th>
+            <th>Course Trainer Exp</th>
+        </tr>
+        </thead>
+        {% for i in servises %}
+        <tbody>
+        <tr>
+            <td>{{ i.course_id }}</td>
+            <td>{{ i.course_name }}</td>
+            <td>{{ i.course_duration }}</td>
+            <td>{{ i.course_start_date }}</td>
+            <td>{{ i.course_start_time}}</td>
+            <td>{{ i.course_trainer_name}}</td>
+            <td>{{ i.course_trainer_exp}}</td>
+        </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    </center>
+    {% else %}
+    <h1>No course is available</h1>
+{% endif %}
+{% endblock %}
+</body>
+</html>

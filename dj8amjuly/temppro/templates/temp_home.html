@@ -1,0 +1,119 @@
+{#<html>#}
+{#<head>#}
+{#    <title>my first template page.</title>#}
+{#    <style>#}
+{#    h1#}
+{#    {#}
+{#        color:darkorange;#}
+{#        font-size: 100px;#}
+{#        text-shadow: 5px 5px 3px blue,#}
+{#                     10px 10px 5px green,#}
+{#                     15px 15px 8px black;#}
+{#    }#}
+{#    h2#}
+{#    {#}
+{#        margin-top:-50px;#}
+{#        font-size:40px;#}
+{#    }#}
+{#    th,td#}
+{#    {#}
+{#        padding:20px 40px;#}
+{#        text-align: center;#}
+{#        font-size: 30px;#}
+{#        text-shadow: 2px 2px 2px red;#}
+{#    }#}
+{#    table#}
+{#    {#}
+{##}
+{#        margin-top: -10px;#}
+{#        box-shadow: 5px 7px 8px darkgreen;#}
+{#    }#}
+{##}
+{#    </style>#}
+{#</head>#}
+{#<body>#}
+{#<center><h1>Welcome to Mypage</h1></center>#}
+{#<center><h2>Employee Information.</h2></center>#}
+{#<center>#}
+{#    <table border="2px">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th>Emp num</th>#}
+{#            <th>Emp Name</th>#}
+{#            <th>Emp Salry</th>#}
+{#        </tr>#}
+{#        <tbody>#}
+{#            <tr>#}
+{#                <td>101</td>#}
+{#                <td>manish</td>#}
+{#                <td>14000</td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td>102</td>#}
+{#                <td>Rahul</td>#}
+{#                <td>15000</td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td>103</td>#}
+{#                <td>rati</td>#}
+{#                <td>16000</td>#}
+{#            </tr>#}
+{#       </tbody>#}
+{#        </thead>#}
+{##}
+{#    </table>#}
+{#</center>#}
+{#</body>#}
+{#</html>#}
+<html>
+    <head>
+            <title>Grid System.</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+        #con1{border: 3px red solid;}
+        #row1{border: 3px blue solid;}
+        #con1row1div1{background-color: green;}
+        #con1row1div2{background-color: red;}
+        #con1row1div3{background-color: blue;}
+        #row2{border: 3px solid black;}
+        #con1row2div2{background-color:orchid;}
+        #row3{border:4px darkgreen solid;}
+        #con1row3div1{background-color:darksalmon;}
+        #con1row3div2{background-color: darkcyan;}
+        </style>
+    </head>
+    <body>
+    <h1 class="text-center">Grid System</h1>
+    <div class="container" id="con1">
+        <div class="row" id="row1">
+            <div class="col-md-4" id="con1row1div1">
+                <h2 class="text-center text-white">Durgasoft</h2>
+            </div>
+                <div class="col-md-4" id="con1row1div2">
+                    <h2 class="text-right text-success">Django</h2>
+                </div>
+                    <div class="col-md-4"id="con1row1div3">
+                        <h2 class="text-center text-white">Python</h2>
+                    </div>
+         </div>
+        <div class="row" id="row2">
+                <div class="col-md-offset-6 col-md-6" id="con1row2div2">
+                    <h2 class="text-center text-white text-uppercase">UI Technologies</h2>
+                </div>
+        </div>
+        <div class="row" id="row3">
+            <div class="col-md-4" id="con1row3div1">
+                <h2 class="text-center text-danger">Hyderabad</h2>
+            </div>
+            <div class="col-md-offset-4 col-md-4"id="con1row3div2">
+                <h2 class="text-center text-warning">Telangana</h2>
+            </div>
+
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Durgasoft1</title>
+    <link href= "{% static 'CSS/base.css' %}" rel="stylesheet">
+</head>
+<body id="bg" style="background-image: url('{% static "images/vicky.png"%}')";>
+<nav>
+    <ul class="menu">
+        <li class="menu_item"><a href="/home/">home</a></li>
+        <li class="menu_item"><a href="/enquiry/">enquiry</a></li>
+        <li class="menu_item"><a href="/feedback/">feedback</a></li>
+        <li class="menu_item"><a href="/gallery/">gallery</a></li>
+        <li class="menu_item"><a href="/services/">services</a></li>
+
+    </ul>
+</nav>
+<br><br>
+<h1 style="text-align: center;color:red">welcome to mypage.</h1>
+{% block content %}
+
+
+{% endblock %}
+<footer>
+    <h4 id="footerh1">@copy; COPYRIGHTS BY MANISHBHAI</h4>
+</footer>
+</body>
+</html>

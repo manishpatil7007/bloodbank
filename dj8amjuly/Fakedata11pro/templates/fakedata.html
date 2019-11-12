@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Fake data Module</title>
+</head>
+<body>
+<center><h1>Employee Data</h1></center>
+
+{% if fdata %}
+<center>
+<table border="2px">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th> Email</th>
+            <th> job</th>
+            <th> Salary</th>
+            <th> City</th>
+            <th> State</th>
+            <th> address</th>
+        </tr>
+    </thead>
+    {% for i in fdata %}
+
+        <tbody>
+        <tr>
+            <td>{{ i.first_name }}</td>
+            <td>{{ i.last_name }}</td>
+            <td>{{ i.email }}</td>
+            <td>{{ i.job }}</td>
+            <td>{{ i.salary }}</td>
+            <td>{{ i.city }}</td>
+            <td>{{ i.state }}</td>
+            <td>{{ i.address }}</td>
+        </tr>
+        </tbody>
+    {% endfor %}
+</table>
+</center>
+    {% else %}
+    <center><h1>Data is not available</h1></center>
+{% endif %}
+</body>
+</html>

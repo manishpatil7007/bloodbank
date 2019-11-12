@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+
+{#    <h1 style="text-align: center;color: brown">It is gallery page</h1>#}
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+         <img src="{% static 'Images/manish2.jpg'%}" style="width: 100%; height: 50% ">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'Images/ind.jpg'%}" style="width: 100%; height:50%">
+    </div>
+
+</div>
+
+</div>
+{% endblock %}
+</body>
+</html>
